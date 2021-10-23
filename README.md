@@ -1,0 +1,2 @@
+# SDGCN
+Graph Embedding + GCN
