@@ -1,0 +1,51 @@
+# specify the input here
+file:
+  dir: &DIR ../data/
+  input:
+    dir: &IN_DIR !join [*DIR, input/]
+    sequences: !join [*IN_DIR, sequences]
+    words: !join [*IN_DIR, words.txt]
+
+# parameters for experiments settings
+exp:
+  dataset: 'dataset'
+  underlyingDistribution: 'multinomial'
+  printLL: no
+  printDetail: yes
+  printDetail: no
+  loadModel: no
+  saveModel: no
+  saveUserAcc: yes
+
+hmm:
+  maxIter: 10
+  # for the hmm model
+  numState: 1
+  numComponent: 1
+
+ehmm:
+  maxIter: 20
+  numCluster: 2
+  initMethod: [random]
+
+sharehmm:
+  maxIter: 10
+  numState: 5
+  numComponent: 200
+  sparsity: 0.01
+  numStateList: [1,2,3,4,5,6,7,8,10,12,14,18,20]
+  numComponentList: [100,200,300,400,500,600,700,800]
+  sparsityList: [0.01, 0.02, 0.04,0.08,0.12,0.24,0.48,0.96,2.0,4.0,8.0,16.0,32.0,64.0,128.0,256.0,512.0,1000.0]
+  evalNumState: yes
+  evalNumComponent: yes
+  evalSparsity: no
+
+predict:
+  testRatio: 0.3
+  distThre: 2.0
+  timeThre: 20.0
+  K: [1,2,3,4,5]
+  # added by Liang
+  avgTest: no
+  filterTest: yes # if set to yes, test set will only retain the seqs of the user with at least 1 training seqs
+
