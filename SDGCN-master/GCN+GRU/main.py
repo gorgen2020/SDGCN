@@ -29,10 +29,10 @@ FLAGS = flags.FLAGS
 
 
 flags.DEFINE_string('dataset', 'xian', 'xian or chengdu.')
-flags.DEFINE_integer('training_epoch',1500, 'Number of epochs to train.')
+flags.DEFINE_integer('training_epoch',3, 'Number of epochs to train.')
 flags.DEFINE_integer('pre_len',1, 'time length of prediction.')
-flags.DEFINE_string('restore', 'no', 'yes or no')
-flags.DEFINE_string('restore_epoch', '100', 'restore_epoch')
+flags.DEFINE_string('restore', 'yes', 'yes or no')
+flags.DEFINE_string('restore_epoch', '1500', 'restore_epoch')
 flags.DEFINE_string('method', 'fix', 'dynamic or fix')
 flags.DEFINE_string('visualization', 'False', 'True or False')
 flags.DEFINE_integer('gru_units', 256, 'hidden units of gru.')
@@ -270,7 +270,7 @@ for epoch in range(training_epoch):
                 saver.restore(sess, 'out/sdgcn/sdgcn_' + data_name + '_lr' + str(lr) +'_batch32_unit' + str(gru_units) + '_seq12_pre' + str(pre_len) + '_epoch' + restore_epoch + '/dynamic_' + data_name + '_sparseHMM_pre' + str(pre_len) + '/' + data_name + '_sparseHMM_pre' + str(pre_len))
             elif method == 'fix':
               print('out/sdgcn/sdgcn_' + data_name +'_lr1e-05_batch32_unit256_seq12_pre' + str(pre_len) + '_epoch' + restore_epoch + '/fix_' + data_name + '_pre' + str(pre_len)  + '/' + data_name + '_fix_pre' + str(pre_len))
-              saver.restore(sess, 'out/sdgcn/sdgcn_' + data_name +'_lr1e-05_batch32_unit256_seq12_pre'+ str(pre_len) + '_epoch' + restore_epoch + '/fix_' + data_name + '_pre' + str(pre_len)  + '/' + data_name + '_fix_pre' + str(pre_len))
+              saver.restore(sess, 'out/sdgcn/sdgcn_' + data_name + '_lr' + str(lr) + '_batch32_unit' + str(gru_units) +'_seq12_pre' + str(pre_len) + '_epoch'+ restore_epoch + '/fix_' + data_name + '_pre' + str(pre_len)  + '/' + data_name + '_fix_pre' + str(pre_len))
 
     elif restore == 'no':
         if epoch == (training_epoch - 1) :
