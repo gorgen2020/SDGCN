@@ -14,9 +14,6 @@ The code consists of two parts. The first part is dynamic graph generation modul
 * Eclipse IDE for Java Developers (includes Incubating components)Version: 2020-12 (4.18.0)
 * Java(TM) SE Runtime Environment (build 1.8.0_291-b10)
 
-## Run the demo:
-SDGCN\State-sharing Sparse HMM\code\src\demo.java
-
 
 ##For the second part,
 
@@ -30,11 +27,17 @@ SDGCN\State-sharing Sparse HMM\code\src\demo.java
 * seaborn
 * sklearn
 
-## Run the demo:
-1 we feed the dataset to the dynamic graph generation module into data\input document and run the predict result(PDF and predict folder).
-2 copy the result to the
+## Run the demo of beijing:
+for final speed prediction,  run step 3 GCN+GRU\main.py, graph_mode is set dynamic or fix.
 
-SDGCN\SDGCN-master\SDGCN\main.py
+for the process of the adjacent matrix
+step 0: remove the outlier and sort the trajectory data by time interval
+step 1: run SDGCN\State-sharing Sparse HMM\code\src\demo.java
+step 2: transform the result of step 1 to adjacent matrix
+step 3: feed the adjacent matrix with node signal to GCN+GRU for traffic flow prediction by GCN+GRU\main.py
+
+
+
 
 
 ***About dataset:
