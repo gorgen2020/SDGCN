@@ -8,7 +8,7 @@ Traffic flow forecasting is a challenging task due to the spatio-temporal depend
 
 The code consists of two parts. The first part is dynamic graph generation module, and the second part is graph convolutional network and temporal gate recursion predictor.In the first step, the moving graph module is used to extract the features of the trajectory data and generate the dynamic graphs of each time slice, and then the generated dynamic graphs are input into the second part to learn the spatio-temporal features, and finally output the prediction results. Moreover, the PyTorch version of dynamic graph generation，graph convolutional network and temporal gate recursion predictor are on the way~
 
-##For the  dynamic graph generation module,
+##For the dynamic graph generation module,
 
 ## Requirements:
 * Eclipse IDE for Java Developers (includes Incubating components)Version: 2020-12 (4.18.0)
@@ -31,6 +31,9 @@ SDGCN\State-sharing Sparse HMM\code\src\demo.java
 * sklearn
 
 ## Run the demo:
+1 we feed the dataset to the dynamic graph generation module into data\input document and run the predict result(PDF and predict folder).
+2 copy the result to the
+
 SDGCN\SDGCN-master\SDGCN\main.py
 
 
