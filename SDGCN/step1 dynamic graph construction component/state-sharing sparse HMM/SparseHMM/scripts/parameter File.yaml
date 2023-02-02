@@ -1,0 +1,51 @@
+# specify the input here
+file:
+  dir: &DIR ../data/
+  input:
+    dir: &IN_DIR !join [*DIR, input/]
+    sequences: !join [*IN_DIR, sequences]
+    words: !join [*IN_DIR, words.txt]
+
+# parameters for experiments settings 2dGaussian  multinomial
+exp:
+  dataset: 'dataset'
+  underlyingDistribution: 'multinomial'
+  printLL: no
+  printDetail: yes
+  printDetail: no
+  loadModel: no
+  saveModel: no
+  saveUserAcc: yes
+
+hmm:
+  maxIter: 10
+  # for the hmm model
+  numState: 2
+  numComponent: 32
+
+ehmm:
+  maxIter: 20
+  numCluster: 1
+  initMethod: [random]
+
+sharehmm:
+  maxIter: 3
+  numState: 2
+  numComponent: 32
+  sparsity: 0.6
+  numStateList: [1,2,3,4,5,6,7,8,10]
+  numComponentList: [1,10,20,30,40,50,60]
+  sparsityList: [0.01, 0.02, 0.04,0.08,0.12,0.24,0.48,0.96]
+  evalNumState: yes
+  evalNumComponent: yes
+  evalSparsity: no
+
+predict:
+  testRatio: 0.3
+  distThre: 20.0
+  timeThre: 600.0
+  K: [1,2,3,4,5]
+  # added by Liang
+  avgTest: no
+  filterTest: yes # if set to yes, test set will only retain the seqs of the user with at least 1 training seqs
+

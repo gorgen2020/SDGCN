@@ -1,0 +1,2 @@
+model_checkpoint_path: "beijing_sparseHMM_pre2"
+all_model_checkpoint_paths: "beijing_sparseHMM_pre2"
