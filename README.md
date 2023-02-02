@@ -42,6 +42,8 @@ step 3: feed the adjacent matrix with node signal to GCN+GRU for traffic flow pr
 
 ***About dataset:
 For beijing dataset, it can avialable at https://www.microsoft.com/en-us/research/publication/t-drive-driving-directions-based-on-taxi-trajectories/
+
+
 ***Attention:
 Data source: Didi Chuxing GAIA Initiative, because the DiDi company's data pact, we cannot publish the original or other data. If you want to obtain the data set, please apply for the authorization of didi company https://gaia.didichuxing.com, and inform us by email, we will send the dataset to you.
 
