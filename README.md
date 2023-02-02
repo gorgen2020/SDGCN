@@ -32,9 +32,13 @@ for final speed prediction,  run step 3 GCN+GRU\main.py, graph_mode is set dynam
 
 for the process of the adjacent matrix
 step 0: remove the outlier and sort the trajectory data by time interval
+
 step 1: run SDGCN\State-sharing Sparse HMM\code\src\demo.java
+
 step 2: transform the result of step 1 to adjacent matrix
+
 step 3: feed the adjacent matrix with node signal to GCN+GRU for traffic flow prediction by GCN+GRU\main.py
+
 
 
 
