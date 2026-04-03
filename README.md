@@ -31,6 +31,7 @@ The code consists of two parts. The first part is dynamic graph generation modul
 for final speed prediction,  run step 3 GCN+GRU\main.py, graph_mode is set dynamic or fix.
 
 for the process of the adjacent matrix
+
 step 0: remove the outlier and sort the trajectory data by time interval
 
 step 1: run SDGCN\State-sharing Sparse HMM\code\src\demo.java
