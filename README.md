@@ -30,7 +30,7 @@ The code consists of two parts. The first part is dynamic graph generation modul
 ## Run the demo of beijing:
 1 For final speed prediction,  run step 3 GCN+GRU\main.py, graph_mode is set dynamic or fix.
 
-2 For the process of the adjacent matrix
+2 For the generation of the adjacent matrix
 
 step 0: remove the outlier and sort the trajectory data by time interval
 
