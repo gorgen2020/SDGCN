@@ -49,8 +49,21 @@ step 3: feed the adjacent matrix with node signal to GCN+GRU for traffic flow pr
 For beijing dataset, it can avialable at https://www.microsoft.com/en-us/research/publication/t-drive-driving-directions-based-on-taxi-trajectories/
 
 
+***Citation:
+If you use this repository in your work, please cite the corresponding paper and consider citing the code repository as well.
+@article{liang2023semantics,
+  title={Semantics-aware dynamic graph convolutional network for traffic flow forecasting},
+  author={Liang, Guojun and Kintak, U and Ning, Xin and Tiwari, Prayag and Nowaczyk, Slawomir and Kumar, Neeraj},
+  journal={IEEE Transactions on Vehicular Technology},
+  volume={72},
+  number={6},
+  pages={7796--7809},
+  year={2023},
+  publisher={IEEE}
+}
+
 ***Attention:
 Data source: Didi Chuxing GAIA Initiative, because the DiDi company's data pact, we cannot publish the original or other data. If you want to obtain the data set, please apply for the authorization of didi company https://gaia.didichuxing.com, and inform us by email, we will send the dataset to you.
 
 If you have any questions, please feel free to email me!
-
+gorgen@163.com
