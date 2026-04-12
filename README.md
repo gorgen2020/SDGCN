@@ -51,6 +51,7 @@ For beijing dataset, it can avialable at https://www.microsoft.com/en-us/researc
 
 ***Citation:
 If you use this repository in your work, please cite the corresponding paper and consider citing the code repository as well.
+
 @article{liang2023semantics,
   title={Semantics-aware dynamic graph convolutional network for traffic flow forecasting},
   author={Liang, Guojun and Kintak, U and Ning, Xin and Tiwari, Prayag and Nowaczyk, Slawomir and Kumar, Neeraj},
