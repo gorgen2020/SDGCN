@@ -56,14 +56,6 @@ If you use this repository in your work, please cite the corresponding paper and
 Suggested BibTeX template for the repository:
 
 ```bibtex
-@inproceedings{liang2024higher,
-  title={Higher-order spatio-temporal physics-incorporated graph neural network for multivariate time series imputation},
-  author={Liang, Guojun and Tiwari, Prayag and Nowaczyk, S{\l}awomir and Byttner, Stefan},
-  booktitle={Proceedings of the 33rd ACM international conference on information and knowledge management},
-  pages={1356--1366},
-  year={2024}
-}
-```
 @article{liang2023semantics,
   title={Semantics-aware dynamic graph convolutional network for traffic flow forecasting},
   author={Liang, Guojun and Kintak, U and Ning, Xin and Tiwari, Prayag and Nowaczyk, Slawomir and Kumar, Neeraj},
@@ -74,6 +66,8 @@ Suggested BibTeX template for the repository:
   year={2023},
   publisher={IEEE}
 }
+```
+
 
 ***Attention:
 Data source: Didi Chuxing GAIA Initiative, because the DiDi company's data pact, we cannot publish the original or other data. If you want to obtain the data set, please apply for the authorization of didi company https://gaia.didichuxing.com, and inform us by email, we will send the dataset to you.
