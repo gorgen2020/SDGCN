@@ -49,9 +49,21 @@ step 3: feed the adjacent matrix with node signal to GCN+GRU for traffic flow pr
 For beijing dataset, it can avialable at https://www.microsoft.com/en-us/research/publication/t-drive-driving-directions-based-on-taxi-trajectories/
 
 
-***Citation:
+## Citation
+
 If you use this repository in your work, please cite the corresponding paper and consider citing the code repository as well.
 
+Suggested BibTeX template for the repository:
+
+```bibtex
+@inproceedings{liang2024higher,
+  title={Higher-order spatio-temporal physics-incorporated graph neural network for multivariate time series imputation},
+  author={Liang, Guojun and Tiwari, Prayag and Nowaczyk, S{\l}awomir and Byttner, Stefan},
+  booktitle={Proceedings of the 33rd ACM international conference on information and knowledge management},
+  pages={1356--1366},
+  year={2024}
+}
+```
 @article{liang2023semantics,
   title={Semantics-aware dynamic graph convolutional network for traffic flow forecasting},
   author={Liang, Guojun and Kintak, U and Ning, Xin and Tiwari, Prayag and Nowaczyk, Slawomir and Kumar, Neeraj},
